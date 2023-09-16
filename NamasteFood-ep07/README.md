@@ -1,4 +1,5 @@
 # Namaste React 🚀
+- [Link to (Namaste Swiggy)](https://swiggyep7.netlify.app/)
 
 # Parcel
 
