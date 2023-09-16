@@ -3,7 +3,7 @@ import resList from "../utils/mockData";
 import Shimmer from "./Shimmer";
 import { Dishes } from "../utils/constants";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const Dish = ({ dish }) => {
   return (
     <div className="dish">
@@ -27,6 +27,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   console.log(searchText);
   useEffect(() => {
+    console.log("useEff called");
     fetchData();
   }, []);
   const fetchData = async () => {
@@ -34,7 +35,7 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
-    // console.log(json);
+    console.log(json);
 
     setListOfRestaurants(
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -92,7 +93,13 @@ const Body = () => {
       </div>
       <div className="Res-container">
         {filteredListOfRestaurants?.map((res) => (
-          <RestaurantCard key={res.info.id} resData={res} />
+          <Link
+            style={{ textDecoration: "none" }}
+            to={"/restaurants/" + res.info.id}
+            key={res.info.id}
+          >
+            <RestaurantCard resData={res} />
+          </Link>
         ))}
       </div>
     </div>
