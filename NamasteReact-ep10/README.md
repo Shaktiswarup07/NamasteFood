@@ -1,0 +1,32 @@
+# Namaste React 🚀
+
+# Parcel
+
+- Dev Build
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm ( written in C++ )
+- Faster builds because of Caching
+- Image optimization
+- Minification of file
+- Bundling
+- Compress
+- Consistent Hashing
+- Code Splitting
+- Differential bundling
+- Diagnostic
+- Better Error handling
+- HTTPs
+- Tree Shaking - remove unused code
+
+# Routing in web apps (2 Types)
+
+- Client Side Routing
+- Server Side Routing
+
+# Styling our web app
+
+- Normal CSS
+- SCSS/SASS
+- Styled Components
+- Bootstrap/ Material UI/ Chakra UI/ ant design/ Tailwind CSS
