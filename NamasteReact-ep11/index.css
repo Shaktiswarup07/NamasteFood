@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kaushan+Script&family=Poppins:wght@300;400;500;600;700&family=Roboto&family=Roboto+Condensed:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-custom {
+    background: linear-gradient(305deg, #f4ece1 57.1%, #fcfbf7 145.5%);
+  }
+  .dishes::-webkit-scrollbar {
+    display: none;
+  }
+  .dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .dish-img {
+    border-radius: 50%;
+  }
+  .font-pop {
+    font-family: "Poppins", sans-serif;
+  }
+}
